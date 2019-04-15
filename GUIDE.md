@@ -8,17 +8,17 @@ Our first goal is going to be ensuring our traffic light can be manaully control
 
 ## Getting set-up
 
-Locate the folder `traffic-light` which is likely on your computer's desktop. Take a moment to have a look at the structure and nose around. You'll see there are then section folders, each of these contain the complete code for that section - just in case you need a helping hand or want to review the code later on.
+Locate the folder `learn-javascript` which is likely on your computer's desktop. Take a moment to have a look at the structure and nose around. You'll see there are then section folders, each of these contain the complete code for that section - just in case you need a helping hand or want to review the code later on.
 
 Next we need to open a Text Editor, this could be Visual Code Studio, Atom or whatever your preference maybe. If you haven't got an editor installed, Visual Code Studio is developed by Microsoft and completely free.
 
 Once your editor is open, we'll need to open up the project;
 
 - In the top right, click 'File' and then 'Open'.
-- Locate the folder `traffic-light` and select 'Open'.
+- Locate the folder `learn-javascript` and select 'Open'.
 - The project will now be open on the left hand side of your text editor and you'll see two folders.
-- In the 'sections' folder, you'll be able to view the complete code for each section.
-- The 'start' folder is the directory we'll be working from, it includes all the files we'll need along with some handy boilerplate code meaning we can get stuck in straight away.
+- In the `sections` folder, you'll be able to view the complete code for each section.
+- The `start` folder is the directory we'll be working from, it includes all the files we'll need along with some handy boilerplate code meaning we can get stuck in straight away.
 - View the `index.html` file in your browser before we get started.
 
 ## Section One
@@ -70,7 +70,7 @@ Below our light, we'll add some CSS for another selector. This'll take care of w
 
 Refreshing your `index.html` you'll now see three blank lights. Let's go a head and add our traffic light colours now.
 
-In our HTML we defined three `id`'s named `red`, `yellow` & `green`. We need to add our colours to those.
+In our HTML we defined three `id`'s named `red`, `yellow` & `green`. We need to add our colours to those. Add the following CSS rules to the bottom of your `styles.css` file.
 
 ```css
 #red {
@@ -321,7 +321,7 @@ var cancel = document.getElementById('cancel');
 
 The section of our script with code related to buttons, should now look like this;
 
-```
+```javascript
 // Buttons
 var reset = document.getElementById('reset');
 var start = document.getElementById('start');
@@ -571,6 +571,7 @@ We're using a _boolean_ value of `false` to tell us the current status of the li
 
 ```javascript
 var lightsOn = false;
+
 start.addEventListener('click', function() {
   if (lightsOn === false) {
     timer = setInterval(automateLights, 2000);
