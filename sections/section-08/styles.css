@@ -1,0 +1,49 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #eeeeee;
+  font-family: sans-serif;
+}
+
+.traffic-light {
+  height: 490px;
+  width: 250px;
+  padding: 10px;
+  margin: 20px auto;
+  background: linear-gradient(0.12turn, #212121 50%, #424242 50%);
+  border-radius: 10px;
+  border: 5px solid #9c9c9c;
+}
+
+.traffic-control {
+  width: 300px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Add your styles below */
+.light {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin: 10px auto;
+  opacity: 0.4;
+}
+
+.light.active {
+  opacity: 1;
+}
+
+#red {
+  background-color: red;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+#green {
+  background-color: green;
+}
